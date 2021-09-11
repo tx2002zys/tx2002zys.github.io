@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>AcWing 3955. 统一大小写</title>
+      <link href="/2021/09/11/qw/"/>
+      <url>/2021/09/11/qw/</url>
+      
+        <content type="html"><![CDATA[<p><span class="exturl" data-url="aHR0cHM6Ly93d3cuYWN3aW5nLmNvbS9wcm9ibGVtL2NvbnRlbnQvMzk1OC8=">题目链接</span></p><hr><h4 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h4><blockquote><p>给定一个单词，单词中既可能包含大写字母也可能包含小写字母。</p></blockquote><blockquote><p>现在，要将单词进行统一大小写的操作，具体操作规则为：</p></blockquote><blockquote><p>如果一个单词中包含的大写字母数量大于小写字母数量，则将所有字母统一为大写，例如 ViP 应改为 VIP。<br>如果一个单词中包含的大写字母数量小于小写字母数量，则将所有字母统一为小写，例如 HoUse 应改为 house。<br>如果一个单词中包含的大写字母数量等于小写字母数量，则将所有字母统一为小写，例如 maTRIx 应改为 matrix。</p></blockquote><h4 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h4><blockquote><p>第一行包含整数 T，表示共有 T 组测试数据。</p></blockquote><blockquote><p>每组数据占一行，包含一个由大小写字母构成的字符串 s。（注意，字符串可能只包含小写字母或只包含大写字母）。</p></blockquote><h4 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h4><blockquote><p>每组数据输出一行结果，一个字符串，表示统一大小写后的单词。</p></blockquote><h4 id="数据范围"><a href="#数据范围" class="headerlink" title="数据范围"></a>数据范围</h4><blockquote><p>本题共两个测试点。<br>小测试点，如样例所示。<br>大测试点满足：1≤T≤30，字符串长度取值范围 [1,100]。</p></blockquote><h4 id="输入样例："><a href="#输入样例：" class="headerlink" title="输入样例："></a>输入样例：</h4><blockquote><p>3<br>HoUse<br>ViP<br>maTRIx</p></blockquote><h5 id="输出样例："><a href="#输出样例：" class="headerlink" title="输出样例："></a>输出样例：</h5><blockquote><p>house<br>VIP<br>matrix</p></blockquote><h4 id="AC-code"><a href="#AC-code" class="headerlink" title="AC code"></a>AC code</h4><pre><code class="C++">#include &lt;bits/stdc++.h&gt;using namespace std;typedef long long ll;const int N=1e5+10;int main(int argc, char const *argv[]) &#123;    int t;    cin&gt;&gt;t;    while(t--)    &#123;        string s;        cin&gt;&gt;s;        int len=s.size();        int sum1=0,sum2=0;        for(int i=0;i&lt;len;i++)        &#123;            if(s[i]&gt;=&#39;a&#39;&amp;&amp;s[i]&lt;=&#39;z&#39;) sum1++;            if(s[i]&gt;=&#39;A&#39;&amp;&amp;s[i]&lt;=&#39;Z&#39;) sum2++;        &#125;        if(sum2&gt;sum1)        &#123;            for(int i=0;i&lt;len;i++)            &#123;                if (s[i] &gt;= &#39;a&#39; &amp;&amp; s[i] &lt;= &#39;z&#39;)                &#123;                    s[i]-=32;                &#125;                 cout&lt;&lt;s[i];            &#125;            cout&lt;&lt;endl;        &#125;        else        &#123;            for (int i = 0; i &lt; len; i++) &#123;                if (s[i] &gt;= &#39;A&#39; &amp;&amp; s[i] &lt;= &#39;Z&#39;) &#123;                    s[i] += 32;                &#125;                cout &lt;&lt; s[i];            &#125;            cout &lt;&lt; endl;        &#125;    &#125;    return 0;&#125;</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> ACwing </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> ACwing 周赛补题 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>图形输出（字符常量练习）</title>
+      <link href="/2021/08/21/text/"/>
+      <url>/2021/08/21/text/</url>
+      
+        <content type="html"><![CDATA[<p><span class="exturl" data-url="aHR0cHM6Ly9hY20uc2R1dC5lZHUuY24vb25saW5lanVkZ2UzL3Byb2JsZW1zLzExMTI=">题目链接</span></p><hr><h4 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h4><blockquote><p>用基本输出语句打印以下图形：<br>#<br>##<br>###<br>####<br>#####<br>######</p></blockquote><h4 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h4><blockquote><p>本题没有输入数据</p></blockquote><h4 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h4><blockquote><p>输出图形由6行组成，第1行有1个#号，第i行有连续的i个#号：<br>#<br>##<br>###<br>####<br>#####<br>######</p></blockquote><h4 id="Sample"><a href="#Sample" class="headerlink" title="Sample"></a>Sample</h4><pre><code class="c">#include &lt;stdio.h&gt;#include &lt;stdlib.h&gt;int main()&#123;    printf(&quot;#\n&quot;);    printf(&quot;##\n&quot;);    printf(&quot;###\n&quot;);    printf(&quot;####\n&quot;);    printf(&quot;#####\n&quot;);    printf(&quot;######\n&quot;);    return 0;&#125;</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> OJ程序设计 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 程序设计基础 l </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World!（printf练习）</title>
+      <link href="/2021/08/21/hello-world/"/>
+      <url>/2021/08/21/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p><span class="exturl" data-url="aHR0cHM6Ly9hY20uc2R1dC5lZHUuY24vb25saW5lanVkZ2UzL3Byb2JsZW1zLzExMTA=">题目链接</span></p><hr><h4 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h4><blockquote><p>很高兴你能上机实践所学的C语言知识！<br>编程不是在课本上的几页纸就能学会的，你必须多思考、多上机才能真正学会一门编程语言，这也是我们出这些题目的初衷。<br>这些题目都是课本上的基本题目，主要目的是让大家巩固课堂上所学到的，希望大家能够认真对待！<br>为了便于调试题目，做这些题目时可以先在CodeBlocks、DevC++或Microsoft VC++6.0中调试成功后再提交。<br>下面我们就开始吧:<br>利用C语言基本格式显示以下内容： Hello World!</p></blockquote><h4 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h4><blockquote><p>本题没有输入数据</p></blockquote><h4 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h4><blockquote><p>输出字符串Hello World!输出后需要换行</p></blockquote><h4 id="Sample"><a href="#Sample" class="headerlink" title="Sample"></a>Sample</h4><pre><code>#include &lt;stdio.h&gt;#include &lt;math.h&gt;int main()&#123;    printf(&quot;Hello World!\n&quot;);    return 0;&#125;</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> OJ程序设计 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 程序设计基础 l </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
