@@ -4,31 +4,6 @@
   
     
     <entry>
-      <title>C语言实验——&#39;%&#39;字符的输入输出</title>
-      <link href="/2021/10/19/r/"/>
-      <url>/2021/10/19/r/</url>
-      
-        <content type="html"><![CDATA[<p><span class="exturl" data-url="aHR0cHM6Ly9hY20uc2R1dC5lZHUuY24vb25saW5lanVkZ2UzL3Byb2JsZW1zLzQyOTQ=">题目链接</span></p><h4 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h4><blockquote><p>输入三个用  %  分割的正整数 a b c 代表月，日，年<br>要求按照输入样式原样输出。</p></blockquote><h4 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h4><blockquote><p>三个int范围内的正整数，中间用  % 分割。</p></blockquote><h4 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h4><blockquote><p>按题目描述输出。</p></blockquote><h4 id="Sample-input"><a href="#Sample-input" class="headerlink" title="Sample input"></a>Sample input</h4><blockquote><p>9%17%2018</p></blockquote><h4 id="Sample-output"><a href="#Sample-output" class="headerlink" title="Sample output"></a>Sample output</h4><blockquote><p>9%17%2018</p></blockquote><h4 id="Solution-1-c"><a href="#Solution-1-c" class="headerlink" title="Solution 1(c++)"></a>Solution 1(c++)</h4><pre><code>#include &lt;bits/stdc++.h&gt;using namespace std;int main() &#123;    int a,b,c;    scanf(&quot;%d%%%d%%%d&quot;,&amp;a,&amp;b,&amp;c);    cout&lt;&lt;a&lt;&lt;&quot;%&quot;&lt;&lt;b&lt;&lt;&quot;%&quot;&lt;&lt;c&lt;&lt;endl;    return 0;&#125;</code></pre><h4 id="Solution-2-c"><a href="#Solution-2-c" class="headerlink" title="Solution 2(c)"></a>Solution 2(c)</h4><pre><code>#include &lt;stdio.h&gt;#include &lt;stdlib.h&gt;int main()&#123;      int a,b,c;    scanf(&quot;%d%%%d%%%d&quot;,&amp;a,&amp;b,&amp;c);    printf(&quot;%d%%%d%%%d&quot;,a,b,c);&#125;</code></pre>]]></content>
-      
-      
-      <categories>
-          
-          <category> OJ程序设计 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 程序设计基础 l </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>C语言实验——带’ 和 ”字符的输出</title>
       <link href="/2021/10/19/q/"/>
       <url>/2021/10/19/q/</url>
