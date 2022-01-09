@@ -29,6 +29,31 @@
     
     
     <entry>
+      <title>G - Inverse Factorial</title>
+      <link href="/2021/10/19/inverrse/"/>
+      <url>/2021/10/19/inverrse/</url>
+      
+        <content type="html"><![CDATA[<p><span class="exturl" data-url="aHR0cHM6Ly92anVkZ2UubmV0L2NvbnRlc3QvNDc1NjY4I3Byb2JsZW0vRw==">题目链接</span></p><h4 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h4><!-- >A factorial n!n! of a positive integer nn is defined as the product of all positive integers smaller than or equal to nn. For example,21!=1⋅2⋅3⋅…⋅21=51090942171709440000.>It is straightforward to calculate the factorial of a small integer, and you have probably done it many times before. In this problem, however, your task is reversed. You are given the value of n! and you have to find the value of n. -->]]></content>
+      
+      
+      <categories>
+          
+          <category> C++/C语言 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> VJ补题 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>C语言实验——逆置正整数</title>
       <link href="/2021/10/19/qq/"/>
       <url>/2021/10/19/qq/</url>
