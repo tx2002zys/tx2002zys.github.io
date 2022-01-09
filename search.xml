@@ -29,31 +29,6 @@
     
     
     <entry>
-      <title>G - Inverse Factorial</title>
-      <link href="/2021/10/19/inverrse/"/>
-      <url>/2021/10/19/inverrse/</url>
-      
-        <content type="html"><![CDATA[<p><span class="exturl" data-url="aHR0cHM6Ly92anVkZ2UubmV0L2NvbnRlc3QvNDc1NjY4I3Byb2JsZW0vRw==">题目链接</span></p><h4 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h4><!-- >A factorial n!n! of a positive integer nn is defined as the product of all positive integers smaller than or equal to nn. For example,21!=1⋅2⋅3⋅…⋅21=51090942171709440000.>It is straightforward to calculate the factorial of a small integer, and you have probably done it many times before. In this problem, however, your task is reversed. You are given the value of n! and you have to find the value of n. -->]]></content>
-      
-      
-      <categories>
-          
-          <category> C++/C语言 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> VJ补题 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>C语言实验——逆置正整数</title>
       <link href="/2021/10/19/qq/"/>
       <url>/2021/10/19/qq/</url>
@@ -146,6 +121,31 @@
         <tags>
             
             <tag> 程序设计基础 l </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>G - Inverse Factorial</title>
+      <link href="/2021/01/19/inverrse/"/>
+      <url>/2021/01/19/inverrse/</url>
+      
+        <content type="html"><![CDATA[<p><span class="exturl" data-url="aHR0cHM6Ly92anVkZ2UubmV0L2NvbnRlc3QvNDc1NjY4I3Byb2JsZW0vRw==">题目链接</span></p><h4 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h4><blockquote><p>A factorial n! of a positive integer n is defined as the product of all positive integers smaller than or equal to n. For example,21!=1⋅2⋅3⋅…⋅21=51090942171709440000.<br>It is straightforward to calculate the factorial of a small integer, and you have probably done it many times before. In this problem, however, your task is reversed. You are given the value of n! and you have to find the value of n.</p></blockquote><h4 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h4><blockquote><p>The input contains the factorial n! of a positive integer n. The number of digits of n! is at most 10^6 .</p></blockquote><h4 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h4><blockquote><p>Output the value of n.</p></blockquote><h3 id="Sample-Input"><a href="#Sample-Input" class="headerlink" title="Sample Input"></a>Sample Input</h3><blockquote><p>120<br>51090942171709440000<br>10888869450418352160768000000</p></blockquote><h3 id="Sample-Output"><a href="#Sample-Output" class="headerlink" title="Sample Output"></a>Sample Output</h3><blockquote><p>5<br>21<br>27</p></blockquote><h4 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h4><pre><code>#include &lt;algorithm&gt;#include &lt;bitset&gt;#include &lt;cmath&gt;#include &lt;cstdio&gt;#include &lt;cstdlib&gt;#include &lt;cstring&gt;#include &lt;deque&gt;#include &lt;functional&gt;#include &lt;iostream&gt;#include &lt;map&gt;#include &lt;queue&gt;#include &lt;set&gt;#include &lt;stack&gt;#include &lt;string&gt;#include &lt;vector&gt;using namespace std;typedef long long ll;const int N=1e5+10;int main(int argc, char const *argv[]) &#123;    string s;    cin&gt;&gt;s;    int len=s.size();    if(len&lt;=10)    &#123;        int i=1;        int ans=1;        while(1)        &#123;            ans*=i;            if(ans==atoi(s.c_str()))            &#123;                cout&lt;&lt;i&lt;&lt;endl;                break;            &#125;            i++;        &#125;    &#125;    else&#123;        int i=1;        double ans=1.0;        while(1)        &#123;            ans+=log10(i);            if(len==floor(ans))            &#123;                cout&lt;&lt;i&lt;&lt;endl;                break;            &#125;            i++;        &#125;    &#125;        return 0;&#125;</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> C++/C语言 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> VJ补题 </tag>
             
         </tags>
       
